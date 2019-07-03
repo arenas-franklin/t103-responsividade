@@ -1,0 +1,90 @@
+body{
+    font-size:18px;
+    display:grid;
+    grid-template-areas:'header header header header'
+                        'navbar navbar navbar navbar'
+                        'section section section aside'
+                        'batata batata batata batata'
+                        'footer footer footer footer';
+    grid-template-rows:10vh 10vh 60vh 60vh 30vh;
+    grid-template-columns: 24vw 24vw 24vw 27vw;
+    margin:0;
+    padding:0;
+
+}
+
+nav{
+    grid-area: navbar;
+    background-color:pink;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    font-size:20px;
+    text-decoration:none;
+    color:white;
+    padding: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color:blue;
+    display:flex;
+    justify-content:center;
+}
+
+header img{
+    height: 100%;
+    border-radius:25%;
+}
+
+section{
+    grid-area: section;
+    background-color:rgb(66, 236, 32);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+section div img{
+    
+    height: 300px;
+}
+
+
+.batata{
+    grid-area: batata;
+    background-image:url("./img/neymarw2.jpg");
+    background-size:cover;
+    text-align:center;
+}
+
+.fake p{
+    font-size:3.2rem;      
+}
+aside{
+    grid-area:aside;
+    background-color:green;
+}
+footer{
+    grid-area: footer;
+    background-color:yellow;
+}
+
+.teste{
+    
+    text-align: center;
+}
+
+.teste-2{
+    font-size: 1.2rem;
+    
+}
+
+.teste-3{
+    font-size:1.2rem;
+}
